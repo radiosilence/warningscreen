@@ -11,5 +11,25 @@ var Root = React.createClass({
   }
 });
 
+var Overlay = React.createClass({
+  render() {
+    return (
+      <div className="overlay" style={this._getStyle()}>
+        <Message />
+      </div>
+    );
+  }
+});
+
+var Message = React.createClass({
+  render() {
+    return (
+      <div className="message">
+        Message!
+      </div>
+    );
+  }
+});
+
 
 React.render(<Root/>, document.body);
